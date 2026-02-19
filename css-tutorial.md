@@ -232,9 +232,65 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>เมนูนำทาง External CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```css
+nav {
+
+    background-color: #2c3e50; 
+    padding: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav > ul > li {
+    margin: 0 10px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-item:hover {
+    background-color: #e9b227; 
+    border-radius: 3px;
+}
+
+#active {
+    background-color: #007bff;
+    border-radius: 3px;
+}
+```
+<img width="1919" height="963" alt="image" src="https://github.com/user-attachments/assets/3d56e495-7700-4e3e-b976-74f7cad83b0c" />
+
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
